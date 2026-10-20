@@ -1,7 +1,7 @@
 <?php
 // api/visitas.php — Persona 2
 require __DIR__ . '/../config/db.php';
-require __DIR__ . '/../config/helpers.php';
+require __DIR__ . '/../config/helpers.php' ;
 requerir_login();
 
 const ESTADOS_VISITA = ['espera', 'atendido', 'despachado'];
