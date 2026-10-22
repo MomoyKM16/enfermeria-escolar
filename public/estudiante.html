@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil del estudiante - Enfermería Escolar</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="barra">
+    <h1 class="marca">Enfermería Escolar</h1>
+    <nav>
+      <a href="dashboard.html">Inicio</a>
+      <a href="orientacion.html">Orientación</a>
+    </nav>
+    <div id="barra-usuario"></div>
+  </header>
+
+  <main class="contenedor">
+    <div style="margin-top: 20px;">
+      <a class="boton boton-suave" href="dashboard.html">Volver</a>
+    </div>
+
+    <div id="perfil"></div>
+    <div id="avisos"></div>
+    <section id="datos" class="panel datos"></section>
+
+    <h2>Historial de visitas</h2>
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Fecha</th><th>Motivo</th><th>Tratamiento</th><th>Estado</th><th>Orientación</th></tr>
+        </thead>
+        <tbody id="tabla-visitas"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/datos-falsos.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/estudiante.js"></script>
+</body>
+</html>

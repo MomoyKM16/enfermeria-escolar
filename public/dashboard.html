@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Enfermería Escolar</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="barra">
+    <h1 class="marca">Enfermería Escolar</h1>
+    <nav>
+      <a href="dashboard.html" aria-current="page">Inicio</a>
+      <a href="orientacion.html">Orientación</a>
+    </nav>
+    <div id="barra-usuario"></div>
+  </header>
+
+  <main class="contenedor">
+    <div id="alertas"></div>
+    <section id="resumen" class="panel resumen"></section>
+
+    <div class="columnas">
+      <section>
+        <h2>Estudiantes</h2>
+        <input type="text" id="buscador" placeholder="Buscar estudiante por nombre">
+        <div class="tabla-scroll">
+          <table>
+            <thead>
+              <tr><th>Nombre</th><th>Grado</th><th>Sección</th><th></th></tr>
+            </thead>
+            <tbody id="tabla-estudiantes"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Últimas visitas</h2>
+        <div class="panel">
+          <ul id="ultimas-visitas" class="lista-visitas"></ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/datos-falsos.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
