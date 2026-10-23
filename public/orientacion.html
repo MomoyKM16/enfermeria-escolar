@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientación - Enfermería Escolar</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="barra">
+    <h1 class="marca">Enfermería Escolar</h1>
+    <nav>
+      <a href="dashboard.html">Inicio</a>
+      <a href="orientacion.html" aria-current="page">Orientación</a>
+    </nav>
+    <div id="barra-usuario"></div>
+  </header>
+
+  <main class="contenedor">
+    <h2>Casos enviados a Orientación</h2>
+    <p id="mensaje" class="suave"></p>
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Fecha</th><th>Estudiante</th><th>Motivo</th><th>Estado</th><th>Nota</th><th></th></tr>
+        </thead>
+        <tbody id="tabla-casos"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/datos-falsos.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/orientacion.js"></script>
+</body>
+</html>
